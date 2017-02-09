@@ -1,0 +1,9 @@
+package br.com.fiap.testes;
+
+import br.com.fiap.property.PropertySingleton;
+
+public class Teste {
+	public static void main(String[] args) {
+		System.out.println(PropertySingleton.getInstance().getProperty("welcome"));
+	}
+}

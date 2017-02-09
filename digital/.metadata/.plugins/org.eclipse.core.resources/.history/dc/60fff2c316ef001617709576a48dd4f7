@@ -1,0 +1,16 @@
+package br.com.fiap.property;
+
+import java.util.Properties;
+
+public class PropertySingleton {
+
+	private static Properties prop;
+	
+	public static Properties getInstance() {
+		if (prop == null) {
+			prop = new Properties();
+		}
+		
+		return prop;
+	}
+}
