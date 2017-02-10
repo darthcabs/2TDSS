@@ -1,0 +1,21 @@
+package br.com.fiap.testes;
+
+import java.lang.reflect.Field;
+
+import br.com.fiap.bean.Animal;
+
+public class Teste {
+	public static void main(String[] args) {
+		Animal animal = new Animal();
+		
+		//Recuperar atributos da classe Animal
+		Field[] atributos = animal.getClass().getDeclaredFields();
+		
+		for (Field field : atributos) {
+			System.out.println(field.getName());
+		}
+		
+		
+		//Recuperar métodos da classe Animal
+	}
+}

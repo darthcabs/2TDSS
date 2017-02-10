@@ -1,0 +1,9 @@
+package br.com.fiap.bean;
+
+@Tabela(nome="T_AVESTRUZ")
+public class Avestruz extends Animal {
+	@Override
+	public void andar(){
+		System.out.println("Andando diferente...");
+	}
+}

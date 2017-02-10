@@ -1,0 +1,13 @@
+package br.com.fiap.testes;
+
+import br.com.fiap.bean.Animal;
+
+public class Teste {
+	public static void main(String[] args) {
+		Animal animal = new Animal();
+		
+		//Recuperar atributos da classe Animal
+		
+		//Recuperar métodos da classe Animal
+	}
+}

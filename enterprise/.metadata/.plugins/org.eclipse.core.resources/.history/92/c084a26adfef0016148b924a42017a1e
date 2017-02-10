@@ -1,0 +1,15 @@
+package br.com.fiap.testes;
+
+import java.lang.annotation.Annotation;
+import br.com.fiap.bean.Avestruz;
+
+public class Teste2 {
+	public static void main(String[] args) {
+		Avestruz avestruz = new Avestruz();
+		Annotation[] annotations = avestruz.getClass().getAnnotations();
+		
+		for (Annotation annotation : annotations) {
+			System.out.println("SELECT * FROM " + annotation);
+		}
+	}
+}

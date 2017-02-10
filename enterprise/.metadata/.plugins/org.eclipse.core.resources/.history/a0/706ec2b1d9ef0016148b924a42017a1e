@@ -1,0 +1,9 @@
+package br.com.fiap.annotations;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
+
+@Target(ElementType.FIELD) // Anotação somente para os atributos da classe
+public @interface Coluna {
+	String nome();
+}
