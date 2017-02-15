@@ -1,6 +1,5 @@
 package br.com.fiap.testes;
 
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 

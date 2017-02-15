@@ -1,6 +1,7 @@
 package br.com.fiap.entity;
 
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -47,6 +48,13 @@ public class Funcionario {
 
 	}
 
+	public Funcionario(String nome, Sexo sexo, Calendar dataNasc, Calendar dataAdm) {
+		this.nome = nome;
+		this.dataNasc = dataNasc;
+		this.dataAdm = dataAdm;
+		this.sexo = sexo;
+	}
+	
 	public Funcionario(int codigo, String nome, Calendar dataNasc, Calendar dataAdm, int chaveAcesso, byte[] foto,
 			Sexo sexo) {
 		this.codigo = codigo;
