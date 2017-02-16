@@ -1,5 +1,0 @@
-package br.com.fiap.property;
-
-public class PropertySingleton {
-
-}

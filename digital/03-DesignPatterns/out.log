@@ -1,0 +1,3 @@
+2017-02-16 20:20:22 INFO  PropertySingleton:12 - Setting language as Portuguese Brazil
+2017-02-16 20:20:22 INFO  PropertySingleton:19 - Instanciando as Properties
+2017-02-16 20:20:22 DEBUG PropertySingleton:28 - Lendo uma propriedade do PropertySingleton

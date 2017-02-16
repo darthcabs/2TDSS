@@ -1,0 +1,9 @@
+package br.com.fiap.loja.bo;
+
+import br.com.fiap.loja.to.ProdutoTO;
+
+public class EstoqueBO {
+	public ProdutoTO consultarProduto (int codigo) {
+		
+	}
+}
