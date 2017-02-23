@@ -1,0 +1,25 @@
+package br.com.fiap.view;
+
+import br.com.fiap.bo.DisciplinaBOStub;
+import br.com.fiap.bo.DisciplinaBOStub.CalcularMedia;
+import br.com.fiap.bo.DisciplinaBOStub.CalcularMediaResponse;
+
+public class TerminalConsulta {
+	public static void main(String[] args) {
+		try {
+			DisciplinaBOStub bo = new DisciplinaBOStub();
+			CalcularMedia valores = new CalcularMedia();
+			valores.setAm(10);
+			valores.setNac(10);
+			valores.setPs(5);
+			
+			CalcularMediaResponse response = bo.calcularMedia(valores);
+			
+			double media = response.get_return();
+			System.out.println("Média: " + media);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

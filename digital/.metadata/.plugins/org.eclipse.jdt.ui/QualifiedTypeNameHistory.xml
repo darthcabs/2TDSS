@@ -19,4 +19,10 @@
 <fullyQualifiedTypeName name="br.com.fiap.loja.TerminalConsulta"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.InputMapUIResource"/>
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+<fullyQualifiedTypeName name="org.apache.axis2.AxisFault"/>
+<fullyQualifiedTypeName name="br.com.fiap.bo.DisciplinaBOStub.CalcularMedia"/>
+<fullyQualifiedTypeName name="br.com.fiap.bo.DisciplinaBOStub.CalcularMediaResponse"/>
+<fullyQualifiedTypeName name="br.com.fiap.bo.DisciplinaBOStub"/>
+<fullyQualifiedTypeName name="br.com.fiap.bo.DisciplinaBOStub.CalcularPs"/>
+<fullyQualifiedTypeName name="br.com.fiap.bo.DisciplinaBOStub.CalcularPsResponse"/>
 </qualifiedTypeNameHistroy>

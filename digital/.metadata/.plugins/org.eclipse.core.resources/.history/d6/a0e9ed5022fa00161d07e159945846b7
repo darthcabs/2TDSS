@@ -1,0 +1,24 @@
+package br.com.fiap.view;
+
+import java.rmi.RemoteException;
+
+import org.apache.axis2.AxisFault;
+
+import br.com.fiap.bo.DisciplinaBOStub;
+import br.com.fiap.bo.DisciplinaBOStub.CalcularMedia;
+
+public class TerminalConsulta {
+	public static void main(String[] args) {
+		try {
+			DisciplinaBOStub bo = new DisciplinaBOStub();
+			CalcularMedia valores = new CalcularMedia();
+			valores.setAm(10);
+			valores.setNac(10);
+			valores.setPs(5);
+			
+			bo.calcularMedia(valores);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,21 @@
+package br.com.fiap.view;
+
+import org.apache.axis2.AxisFault;
+
+import br.com.fiap.bo.DisciplinaBOStub;
+import br.com.fiap.bo.DisciplinaBOStub.CalcularPs;
+
+public class ConsultarPS {
+	public static void main(String[] args) {
+		try {
+			DisciplinaBOStub bo = new DisciplinaBOStub();
+			CalcularPs valores = new CalcularPs();
+			valores.setNac(7);
+			valores.setAm(6);
+			bo.calcularPs(valores);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

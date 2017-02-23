@@ -1,7 +1,0 @@
-package br.com.fiap.loja.to;
-
-import java.io.Serializable;
-
-public class ProdutoTO implements Serializable {
-
-}

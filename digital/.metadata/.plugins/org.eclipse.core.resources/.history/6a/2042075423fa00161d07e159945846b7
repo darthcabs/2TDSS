@@ -1,0 +1,25 @@
+package br.com.fiap.view;
+
+import br.com.fiap.bo.DisciplinaBOStub;
+import br.com.fiap.bo.DisciplinaBOStub.CalcularPs;
+import br.com.fiap.bo.DisciplinaBOStub.CalcularPsResponse;
+
+public class ConsultarPS {
+	public static void main(String[] args) {
+		try {
+			DisciplinaBOStub bo = new DisciplinaBOStub();
+			
+			CalcularPs valores = new CalcularPs();
+			valores.setNac(7);
+			valores.setAm(7);
+			
+			CalcularPsResponse response = bo.calcularPs(valores);
+			
+			double ps = response.get_return();
+			System.out.println("PS: " + ps);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
