@@ -1,0 +1,42 @@
+package br.com.fiap.dao.impl;
+
+import javax.persistence.EntityManager;
+
+import br.com.fiap.dao.GenericDAO;
+
+public class GenericDAOImpl<T,K> implements GenericDAO<T,K> {
+
+	EntityManager em;
+	
+	public GenericDAOImpl(EntityManager em) {
+		this.em = em;
+	}
+	
+	@Override
+	public void insert(T entity) {
+		em.getTransaction().begin();
+		em.persist(entity);
+		em.getTransaction().commit();
+	}
+
+	@Override
+	public void update(T entity) {
+		em.getTransaction().begin();
+		em.merge(entity);
+		em.getTransaction().commit();
+	}
+
+	@Override
+	public void delete(K id) {
+		em.getTransaction().begin();
+		em.remove(findById(id));
+		em.getTransaction().commit();
+	}
+
+	@Override
+	public T findById(K id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

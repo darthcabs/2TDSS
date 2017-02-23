@@ -1,0 +1,26 @@
+package br.com.fiap.dao.impl;
+
+import br.com.fiap.dao.GenericDAO;
+
+public class GenericDAOImpl<T,K> implements GenericDAO<T,K> {
+
+	@Override
+	public void insert(Object entity) {
+		
+	}
+
+	@Override
+	public void update(Object entity) {
+		
+	}
+
+	@Override
+	public void delete(Object id) {
+		
+	}
+
+	@Override
+	public Object findById(Object id) {
+		return null;
+	}
+}
