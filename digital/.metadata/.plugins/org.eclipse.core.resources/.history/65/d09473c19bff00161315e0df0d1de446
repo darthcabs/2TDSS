@@ -1,0 +1,31 @@
+package br.com.fiap.ui;
+
+import java.util.Scanner;
+
+import org.tempuri.CalcPrecoPrazoWSStub;
+import org.tempuri.CalcPrecoPrazoWSStub.CalcPrazo;
+import org.tempuri.CalcPrecoPrazoWSStub.CalcPrazoResponse;
+
+public class UserUI {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("CEP Origem: ");
+		String cepO = sc.next() + sc.nextLine();
+		System.out.print("CEP Destino: ");
+		String cepD = sc.next() + sc.nextLine();
+		sc.close();
+		
+		try {
+			CalcPrecoPrazoWSStub ws = new CalcPrecoPrazoWSStub();
+			CalcPrazo parametros = new CalcPrazo();
+			parametros.setNCdServico("40010");
+			parametros.setSCepDestino(cepD);
+			parametros.setSCepOrigem(cepO);
+			CalcPrazoResponse resp = ws.calcPrazo(parametros);
+			String prazo = resp.getCalcPrazoResult().getServicos().getCServico()[0].getPrazoEntrega();
+			System.out.println("Prazo de entrega: " + prazo + " dias");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

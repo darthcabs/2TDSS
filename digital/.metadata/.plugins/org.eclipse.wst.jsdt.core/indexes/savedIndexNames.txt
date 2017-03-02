@@ -1,8 +1,3 @@
 INDEX VERSION 1.3+D:\2TDSS\digital\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2362941968.index
-516192849.index
-306841177.index
-2453822939.index
-846565894.index
-144446339.index
-775020633.index
+3597975971.index
+17197316.index

@@ -1,0 +1,25 @@
+package br.com.fiap.userui;
+
+import java.util.Scanner;
+
+import com.fiap.inventario.EstoqueBOStub;
+import com.fiap.inventario.EstoqueBOStub.ConsultarProduto;
+
+public class UserUI {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Código do produto: ");
+		int cod = sc.nextInt();
+		
+		try {
+			EstoqueBOStub stub = new EstoqueBOStub();
+			ConsultarProduto parameters = new ConsultarProduto();
+			parameters.setCodigo(401);
+			stub.consultarProduto(consultarProduto0)
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
